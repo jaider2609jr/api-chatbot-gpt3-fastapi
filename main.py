@@ -2,6 +2,8 @@ from fastapi import FastAPI
 from schemas import prompt_schema, res_schema
 from controllers.openaiController import response_prompt
 
+#en el archivo de openaiConroller de la carpeta controllers configura tu apikey para pueda funcionar a api
+
 app = FastAPI()
 
 @app.get("/")
